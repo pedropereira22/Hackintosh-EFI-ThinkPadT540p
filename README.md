@@ -7,16 +7,39 @@
 | System | macOS Big Sur 11.6.5 (20G527) |
 | Bootloader | OpenCore v0.8.0 |
 
-### Hardware Specs
+### My Hardware Setup
 |   Hardware    |   Model  |
 | -------- | :----: |
 | Laptop | Lenovo ThinkPad T540p |
-| CPU | Intel Core i7 4800MQ |
-| RAM | 三星 DDR4 1600 8G*2 |
-| HDD | 三星 860EVO，Sata 500GB |
+| CPU | Intel Core I5-4300M |
+| RAM | 6GB (4gb+2gb) DDR3L 1600MHz |
+| HDD | Kingston SSD 500GB |
 | GPU | Intel HD Graphics 4600 |
-| Display | 3K |
+| Display | 1080p FHD 15.6 |
 | Wifi adapter | Intel 7260AC |
+
+## BIOS SETTINGS 
+
+Note: This Bios Setup is from [This Repo](https://github.com/VinylNerd/ThinkPad-T440P-OpenCore/blob/main/README.md)
+
+The BIOS must be properly configured prior to installing macOS.
+
+In Security menu, set the following settings:
+
+    Security > Security Chip: must be Disabled,
+    Memory Protection > Execution Prevention: must be Enabled,
+    Internal Device Access > Bottom Cover Tamper Detection: must be Disabled,
+    Anti-Theft > Current Setting: must be Disabled,
+    Anti-Theft > Computrace > Current Setting: must be Disabled,
+    Secure Boot > Secure Boot: must be Disabled.
+
+In Startup menu, set the following options:
+
+    UEFI/Legacy Boot: Both,
+    UEFI/Legacy Priority: UEFI First,
+    CSM Support: Yes. VERY IMPORTANT!!!
+
+Now you can go through the install.
 
 ### Completeness
 + Normal drive of nuclear display, 2048MB video memory
