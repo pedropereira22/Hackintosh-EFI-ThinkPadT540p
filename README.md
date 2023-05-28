@@ -4,8 +4,8 @@
 ### Software Version
 | Software | Version |
 | --- | :--: |
-| System | macOS Big Sur 11.6.5 (20G527) |
-| Bootloader | OpenCore v0.8.0 |
+| System | macOS Big Sur 11.7.5 |
+| Bootloader | OpenCore v0.9.2 |
 
 ### My Hardware Setup
 |   Hardware    |   Model  |
